@@ -16,7 +16,3 @@ goarch: amd64   # same values as GOARCH env variable.
 # {{ .OS }} will be replaced by goos field in the config file.
 # {{ .Arch }} will be replaced by goarch field in the config file.
 binary: containerd-shim-containerd-runc-readonlyrootfs-shim
-
-# (Optional) ldflags generated dynamically in the workflow, and set as the `env` input variables in the workflow. 
-ldflags:
-  - '{{ .Env.VERSION_LDFLAGS }}'
