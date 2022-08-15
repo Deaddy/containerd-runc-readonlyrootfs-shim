@@ -6,7 +6,7 @@ require (
 	github.com/containerd/containerd v1.6.8
 	github.com/gogo/protobuf v1.3.2
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
-	github.com/emicklei/go-restful v3.9.0+incompatible
+	github.com/emicklei/go-restful/v3 v3.9.0
 )
 
 require (
