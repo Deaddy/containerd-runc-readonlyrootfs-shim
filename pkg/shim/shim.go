@@ -58,9 +58,6 @@ func (s *service) StartShim(ctx context.Context, opts shim.StartOpts) (string, e
 	if err != nil {
 		return "", err
 	}
-  // This is what we actually due
-  // Simply force Readonly to true.
-  spec.Root.Readonly = true
   if err := s.writeSpec(ctx, spec); err != nil {
 		return "", err
 	}
