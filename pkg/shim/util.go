@@ -34,6 +34,9 @@ func (s *service) getSpec(ctx context.Context) (*ocispec.Spec, error) {
 	}
 	out := &ocispec.Spec{}
 	// this is our chance to set default values for the spec
+  if out.Root == nil {
+    out.Root = ocispec.Root{}
+  }
 	out.Root.Readonly = true
 	// if any values are set, they will be overwritten by Unmarshal
 	return out, json.Unmarshal(body, out)
